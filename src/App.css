@@ -1,0 +1,75 @@
+.App-header {
+  background: #f4f4f4;
+}
+
+.App section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.App img {
+  margin: 40px 0;
+}
+
+.App h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.App h2 {
+  margin-bottom: 30px;
+}
+
+.App h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.App h4 {
+  font-size: 20px;
+}
+
+.App i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.App ul {
+  margin-left: 410px;
+}
+
+.App li {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.App p {
+  text-align: center;
+}
+
+.App .header-text {
+  margin: 150px 0;
+}
+
+.App .container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.App .btn-branding {
+  color: white;
+  background: #a88b70;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 1px solid #a88b70;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.App .btn-branding:hover {
+  opacity: 0.9;
+}
