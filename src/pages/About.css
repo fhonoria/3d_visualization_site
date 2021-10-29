@@ -1,0 +1,19 @@
+.about img {
+  width: 350px;
+  margin: 40px 0;
+}
+
+.about h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.about h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.about .header-text {
+  margin: 150px 0;
+}

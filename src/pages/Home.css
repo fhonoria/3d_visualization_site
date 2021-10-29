@@ -1,0 +1,56 @@
+.home header {
+  background: #f4f4f4;
+}
+
+.home section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.home img {
+  margin: 40px 0;
+}
+
+.home h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.home h2 {
+  margin-bottom: 30px;
+}
+
+.home h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.home h4 {
+  font-size: 20px;
+}
+
+.home i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home li {
+  margin: 20px 0 0 415px;
+  text-align: left;
+}
+
+.home p {
+  text-align: center;
+}
+
+.home .header-text {
+  margin: 150px 0;
+}
+
+.home .container {
+  margin: 0 auto;
+  padding: 0;
+}
