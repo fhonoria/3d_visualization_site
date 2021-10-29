@@ -1,9 +1,24 @@
+import React from "react";
 import "./App.css";
 import photo from "./3dsample.jpeg";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Reports from "./pages/Reports";
+import Products from "./pages/Products";
 
 export default function App() {
   return (
     <div className="App">
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/reports" exact component={Reports} />
+          <Route path="/products" exact component={Products} />
+        </Switch>
+      </Router>
+
       <header className="App-header">
         <div className="container">
           <div className="row">
@@ -16,7 +31,7 @@ export default function App() {
                 I am Sandor Juhasz. Architect and 3D visualiser. Welcome to my
                 site!
               </h3>
-              <a href="https://www.google.com/" className="btn btn-branding">
+              <a href="src/Works" className="btn btn-branding">
                 Works
               </a>
               <a href="https://www.google.com/" className="btn btn-branding">
