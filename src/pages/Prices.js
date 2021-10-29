@@ -5,7 +5,9 @@ import "./Prices.css";
 function Prices() {
   return (
     <div className="prices">
-      <h1>Prices</h1>
+      <section>
+        <h1>Prices</h1>
+      </section>
       <Services />
       <div className="container">
         <div className="row">
