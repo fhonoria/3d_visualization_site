@@ -54,3 +54,12 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.home .work-button {
+  color: #060b26;
+  text-decoration: none;
+}
+
+.home i:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,28 @@
+.works section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.works h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.works h4 {
+  font-size: 20px;
+}
+
+.works i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.works a {
+  color: #060b26;
+  text-decoration: none;
+}
+
+.works i:hover {
+  opacity: 0.7;
+}

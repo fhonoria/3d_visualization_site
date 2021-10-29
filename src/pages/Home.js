@@ -1,5 +1,6 @@
 import React from "react";
-import photo from "./3dsample.jpeg";
+import Services from "../components/Services";
+import photo from "../photos/3dsample.jpeg";
 import "./Home.css";
 
 function Home() {
@@ -31,20 +32,7 @@ function Home() {
         <div className="container">
           <section>
             <h2>Services</h2>
-            <div className="row">
-              <div className="col-4">
-                <i class="fas fa-building icon"></i>
-                <h4>3D exterior visualisation</h4>
-              </div>
-              <div className="col-4">
-                <i class="fas fa-couch icon"></i>
-                <h4>3D interior visualisation</h4>
-              </div>
-              <div className="col-4">
-                <i class="fas fa-drafting-compass icon"></i>
-                <h4>3D floor plans</h4>
-              </div>
-            </div>
+            <Services />
           </section>
           <section>
             <h2>Reasons to order 3D visualisation</h2>
