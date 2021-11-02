@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -10,18 +10,37 @@ import Prices from "./pages/Prices";
 import Contact from "./pages/Contact";
 
 export default function App() {
+  let languageStoredInLocalStorage = localStorage.getItem("language");
+  let [language, setLanguage] = useState(
+    languageStoredInLocalStorage ? languageStoredInLocalStorage : "English"
+  );
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar
+          language={language}
+          handleSetLanguage={(language) => {
+            setLanguage(language);
+            storeLanguageInLocalStorage(language);
+          }}
+        />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/works" exact component={Works} />
-          <Route path="/prices" exact component={Prices} />
-          <Route path="/contact" exact component={Contact} />
+          <Route
+            path="/"
+            exact
+            component={() => <Home language={language} />}
+          />
+          <Route path="/about" component={About} />
+          <Route path="/works" component={Works} />
+          <Route path="/prices" component={Prices} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
     </div>
   );
+}
+
+function storeLanguageInLocalStorage(language) {
+  localStorage.setItem("language", language);
 }

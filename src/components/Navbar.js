@@ -7,10 +7,12 @@ import "./Navbar.css";
 import { IconContext } from "react-icons";
 import logo from "../photos/Logo_white.png";
 
-function Navbar() {
+function Navbar(props) {
+  console.log(props);
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -22,6 +24,16 @@ function Navbar() {
             <Link to="/">
               <img src={logo} alt="logo" className="img-fluid"></img>
             </Link>
+            <div className="language-select">
+              <select
+                className="custom-select"
+                value={props.language}
+                onChange={(e) => props.handleSetLanguage(e.target.value)}
+              >
+                <option>English</option>
+                <option>German</option>
+              </select>
+            </div>
           </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -32,14 +44,25 @@ function Navbar() {
               </Link>
             </li>
             {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
+              if (props.language === "German") {
+                return (
+                  <li key={index} className={item.cName}>
+                    <Link to={item.path} language={props.language}>
+                      {item.icon}
+                      <span>{item.GermanTitle}</span>
+                    </Link>
+                  </li>
+                );
+              } else {
+                return (
+                  <li key={index} className={item.cName}>
+                    <Link to={item.path} language={props.language}>
+                      {item.icon}
+                      <span>{item.EnglishTitle}</span>
+                    </Link>
+                  </li>
+                );
+              }
             })}
           </ul>
         </nav>

@@ -6,32 +6,37 @@ import * as MdIcons from "react-icons/md";
 
 export const SidebarData = [
   {
-    title: "Home",
+    GermanTitle: "Startseite",
+    EnglishTitle: "Home",
     path: "/",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
   {
-    title: "About",
+    GermanTitle: "Über mich",
+    EnglishTitle: "About",
     path: "/about",
     icon: <IoIcons.IoMdPerson />,
     cName: "nav-text",
   },
   {
-    title: "Works",
+    GermanTitle: "Portfolio",
+    EnglishTitle: "Works",
     path: "/works",
     icon: <MdIcons.MdHomeWork />,
     cName: "nav-text",
   },
 
   {
-    title: "Prices",
+    GermanTitle: "Preise",
+    EnglishTitle: "Prices",
     path: "/prices",
     icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },
   {
-    title: "Contact",
+    GermanTitle: "Kontakt",
+    EnglishTitle: "Contact",
     path: "/contact",
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: "nav-text",
