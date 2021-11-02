@@ -1,6 +1,6 @@
 import React from "react";
 import Services from "../components/Services";
-import photo from "../photos/3dsample.jpeg";
+import photo from "../photos/final_day_2_ps.jpg";
 import "./Home.css";
 
 function Home() {
