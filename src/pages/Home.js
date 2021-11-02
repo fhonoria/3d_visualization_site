@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Services from "../components/Services";
 import photo from "../photos/final_day_2_ps.jpg";
 import "./Home.css";
+import ReactHtmlParser from "react-html-parser";
 
 function Home(props) {
   let content = {
@@ -9,13 +10,42 @@ function Home(props) {
       title: "3D visualisation",
       description:
         "I am Sandor Juhasz. Architect and 3D visualiser. Welcome to my site!",
-      reasons: "Reasons to order 3D visualisation",
+      worksButton: "Works",
+      contactButton: "Contact",
+      reasonTitle: "Reasons to order 3D visualisation",
+      reasons: `<li>Improves attractivity of the building</li>
+              <li>Expedites investor´s decision-making</li>
+              <li>Increases sales</li>
+              <li>Helps you to stay ahead of competition</li>
+              <li>Contributes to a modern company image</li>`,
+      startTitle: "To start with...",
+      startDescription: `<p>
+              All I need is some architectural sketches, blueprints or drawings
+              in any format and all the details you have regarding the project.
+              <br />
+              The more information, the better results.
+            </p>`,
+      requestButton: "Send your request",
     },
     German: {
       title: "3D Visualisierung",
       description:
         "Ich bin Sandor Juhasz. Architekt und 3D Visualisierer. Wilkommen auf meiner Webseite!",
-      reasons: "Gründe 3D Pläne zu bestellen",
+      worksButton: "Portfolio",
+      contactButton: "Kontakt",
+      reasonTitle: "Gute Gründe 3D Pläne zu bestellen",
+      reasons: `<li>Verbessert die Attraktivität des Gebäudes</li>
+              <li>Beschleunigt die Entscheidungsfindung von den Investoren</li>
+              <li>Steigert den Verkauf</li>
+              <li>Hilft vor der Konkurrenz in Führung zu bleiben</li>
+              <li>Trägt zu einem modernen Unternehmensimage bei</li>`,
+      startTitle: "zum Start der Zusammenarbeit...",
+      startDescription: `<p>
+              Alles, was ich brauche, sind Ihre architektonische Skizzen,  I need is some architectural Zeichnungen, Entwürfe und Pläne und alle Details, die Sie mir zur Verfügung stellen können.
+              <br />
+              Je mehr Informationen, desto besser das Ergebnis.
+            </p>`,
+      requestButton: "Anfrage senden",
     },
   };
 
@@ -35,10 +65,10 @@ function Home(props) {
               <h1>{content.title}</h1>
               <h3>{content.description}</h3>
               <a href="./Works" className="btn btn-branding">
-                Works
+                {content.worksButton}
               </a>
               <a href="./Contact" className="btn btn-branding">
-                Contact
+                {content.contactButton}
               </a>
             </div>
           </div>
@@ -51,26 +81,19 @@ function Home(props) {
             <Services />
           </section>
           <section>
-            <h2>{content.reasons}</h2>
-            <ul>
-              <li>Improves attractivity of the building</li>
-              <li>Expedites investor´s decision-making</li>
-              <li>Increases sales</li>
-              <li>Helps you to stay ahead of competition</li>
-              <li>Contributes to a modern company image</li>
-            </ul>
+            <Fragment>
+              <h2>{content.reasonTitle}</h2>
+              <ul>{ReactHtmlParser(content.reasons)}</ul>
+            </Fragment>
           </section>
           <section>
-            <h2>To start with...</h2>
-            <p>
-              All I need is some architectural sketches, blueprints or drawings
-              in any format and all the details you have regarding the project.
-              <br />
-              The more information, the better results.
-            </p>
-            <a href="./Contact" className="btn btn-branding request-button">
-              Send your request
-            </a>
+            <Fragment>
+              <h2>{content.startTitle}</h2>
+              {ReactHtmlParser(content.startDescription)}
+              <a href="./Contact" className="btn btn-branding request-button">
+                {content.requestButton}
+              </a>
+            </Fragment>
           </section>
         </div>
       </main>
