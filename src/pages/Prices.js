@@ -2,7 +2,7 @@ import React from "react";
 import Services from "../components/Services";
 import "./Prices.css";
 
-function Prices() {
+function Prices(props) {
   return (
     <div className="prices">
       <section>

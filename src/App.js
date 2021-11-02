@@ -31,10 +31,22 @@ export default function App() {
             exact
             component={() => <Home language={language} />}
           />
-          <Route path="/about" component={About} />
-          <Route path="/works" component={Works} />
-          <Route path="/prices" component={Prices} />
-          <Route path="/contact" component={Contact} />
+          <Route
+            path="/about"
+            component={() => <About language={language} />}
+          />
+          <Route
+            path="/works"
+            component={() => <Works language={language} />}
+          />
+          <Route
+            path="/prices"
+            component={() => <Prices language={language} />}
+          />
+          <Route
+            path="/contact"
+            component={() => <Contact language={language} />}
+          />
         </Switch>
       </Router>
     </div>

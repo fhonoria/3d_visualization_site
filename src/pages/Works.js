@@ -13,13 +13,13 @@ import object2 from "../photos/Closeup_final_ps.jpg";
 import floorphoto from "../photos/floorplans.jpeg";
 import Services from "../components/Services";
 
-function Works() {
+function Works(props) {
   return (
     <div className="works">
       <section>
         <h1>Portfolio</h1>
       </section>
-      <Services />
+      <Services language={props.language} />
       <div className="container">
         <section id="exterior">
           <h2>3D exterior visualisation</h2>

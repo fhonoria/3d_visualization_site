@@ -78,7 +78,7 @@ function Home(props) {
         <div className="container">
           <section>
             <h2>Services</h2>
-            <Services />
+            <Services language={props.language} />
           </section>
           <section>
             <Fragment>

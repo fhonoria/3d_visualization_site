@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../photos/profile.jpg";
 import "./About.css";
 
-function About() {
+function About(props) {
   return (
     <div className="about">
       <section>
