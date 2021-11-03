@@ -33,11 +33,11 @@ function Contact(props) {
       <section>
         <h2 className="mb-3">Instagram</h2>
         <a
-          href="https://www.instagram.com/san_ci_88"
+          href="https://www.instagram.com/v_h_i_s_3d"
           target="_blank"
           rel="noreferrer"
         >
-          @san_ci_88
+          @v_h_i_s_3d
         </a>
       </section>
       <section>
