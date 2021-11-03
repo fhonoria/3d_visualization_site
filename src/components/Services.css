@@ -10,18 +10,31 @@
   font-size: 20px;
 }
 
-.services i {
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 .services a {
   color: #060b26;
   text-decoration: none;
 }
 
-.services i:hover {
+.services a:hover {
   opacity: 0.7;
+}
+
+.services .couch-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.services .compass-icon {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.services .bulb-icon {
+  font-size: 53px;
+  margin-bottom: 18px;
+}
+
+.services .building-icon {
+  font-size: 45px;
+  margin-bottom: 23px;
 }

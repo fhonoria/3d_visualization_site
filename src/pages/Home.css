@@ -9,6 +9,7 @@
 
 .home img {
   margin: 40px 0;
+  max-width: 80%;
 }
 
 .home h1 {

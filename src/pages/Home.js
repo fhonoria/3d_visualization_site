@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Services from "../components/Services";
-import photo from "../photos/final_day_2_ps.jpg";
+import photo from "../photos/homepic.JPG";
 import "./Home.css";
 import ReactHtmlParser from "react-html-parser";
 

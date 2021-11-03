@@ -33,6 +33,13 @@ function Works(props) {
             </div>
             <div className="col-6">
               <img
+                src={exterior4}
+                className="img-fluid mb-4"
+                alt="exterior"
+              ></img>
+            </div>
+            <div className="col-6">
+              <img
                 src={exterior2}
                 className="img-fluid mb-4"
                 alt="exterior"
@@ -41,13 +48,6 @@ function Works(props) {
             <div className="col-6">
               <img
                 src={exterior3}
-                className="img-fluid mb-4"
-                alt="exterior"
-              ></img>
-            </div>
-            <div className="col-6">
-              <img
-                src={exterior4}
                 className="img-fluid mb-4"
                 alt="exterior"
               ></img>
@@ -66,6 +66,13 @@ function Works(props) {
             </div>
             <div className="col-6">
               <img
+                src={interior4}
+                className="img-fluid mb-4"
+                alt="interior"
+              ></img>
+            </div>
+            <div className="col-6">
+              <img
                 src={interior2}
                 className="img-fluid mb-4"
                 alt="interior"
@@ -74,13 +81,6 @@ function Works(props) {
             <div className="col-6">
               <img
                 src={interior3}
-                className="img-fluid mb-4"
-                alt="interior"
-              ></img>
-            </div>
-            <div className="col-6">
-              <img
-                src={interior4}
                 className="img-fluid mb-4"
                 alt="interior"
               ></img>
