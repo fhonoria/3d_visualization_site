@@ -70,7 +70,7 @@ function Services(props) {
               </a>
             </div>
             <div className="col-3">
-              <a href="./Works#products" className="work-button">
+              <a href="./Works#product-design" className="work-button">
                 <HiIcons.HiLightBulb className="bulb-icon" />
                 <h4>
                   <strong className="text-uppercase">

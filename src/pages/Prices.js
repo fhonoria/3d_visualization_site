@@ -3,15 +3,28 @@ import Services from "../components/Services";
 import "./Prices.css";
 
 function Prices(props) {
+  let content = {
+    English: {
+      orderButton: "Order",
+    },
+    German: {
+      orderButton: "Bestellen",
+    },
+  };
+
+  props.language === "German"
+    ? (content = content.German)
+    : (content = content.English);
+
   return (
     <div className="prices">
       <section>
         <h1>Prices</h1>
       </section>
-      <Services />
+      <Services language={props.language} />
       <div className="container">
         <div className="row">
-          <div className="col-4 column">
+          <div className="col-3 column">
             <h2>100€</h2>
             <br />
             <p>Details</p>
@@ -20,10 +33,10 @@ function Prices(props) {
             <p>Details</p>
             <br />
             <a href="./Contact" className="btn btn-branding">
-              Order
+              {content.orderButton}
             </a>
           </div>
-          <div className="col-4 column">
+          <div className="col-3 column">
             <h2>100€</h2>
             <br />
             <p>Details</p>
@@ -32,10 +45,10 @@ function Prices(props) {
             <p>Details</p>
             <br />
             <a href="./Contact" className="btn btn-branding">
-              Order
+              {content.orderButton}
             </a>
           </div>
-          <div className="col-4 column">
+          <div className="col-3 column">
             <h2>100€</h2>
             <br />
             <p>Details</p>
@@ -44,7 +57,19 @@ function Prices(props) {
             <p>Details</p>
             <br />
             <a href="./Contact" className="btn btn-branding">
-              Order
+              {content.orderButton}
+            </a>
+          </div>
+          <div className="col-3 column">
+            <h2>100€</h2>
+            <br />
+            <p>Details</p>
+            <p>Details</p>
+            <p>Details</p>
+            <p>Details</p>
+            <br />
+            <a href="./Contact" className="btn btn-branding">
+              {content.orderButton}
             </a>
           </div>
         </div>

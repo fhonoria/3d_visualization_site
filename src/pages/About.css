@@ -12,12 +12,14 @@
   margin-left: 20px;
 }
 
-.about h3 {
-  font-size: 25px;
-  margin-top: 20px;
+.about h2,
+h3,
+li {
+  font-size: 22px;
+  line-height: 1.5;
   margin-left: 20px;
 }
 
 .about .header-text {
-  margin: 150px 0;
+  margin: 70px 0;
 }
