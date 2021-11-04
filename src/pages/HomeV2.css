@@ -1,0 +1,67 @@
+.homev2 {
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.homev2 .container {
+  padding: 0 50px;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.homev2 h1 {
+  font-size: 50px;
+  padding: 50px 0;
+}
+
+.homev2 h4 {
+  font-size: 20px;
+}
+
+.homev2 .work-button {
+  color: #060b26;
+  text-decoration: none;
+}
+
+.homev2 a:hover {
+  opacity: 0.7;
+}
+
+.homev2 img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 357px;
+  height: 238px;
+}
+
+.homev2 .couch-icon {
+  font-size: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.homev2 .compass-icon {
+  font-size: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.homev2 .bulb-icon {
+  font-size: 53px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.homev2 .building-icon {
+  font-size: 45px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.homev2 section {
+  margin: 90px 0;
+}

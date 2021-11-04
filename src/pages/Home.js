@@ -12,6 +12,7 @@ function Home(props) {
         "I am Sandor Juhasz. Architect and 3D visualiser. Welcome to my site!",
       worksButton: "Works",
       contactButton: "Contact",
+      servicesHeader: "Services",
       reasonTitle: "Reasons to order 3D visualisation",
       reasons: `<li>Improves attractivity of the building</li>
               <li>Expedites investor´s decision-making</li>
@@ -33,6 +34,7 @@ function Home(props) {
         "Ich bin Sandor Juhasz. Architekt und 3D Visualisierer. Wilkommen auf meiner Webseite!",
       worksButton: "Portfolio",
       contactButton: "Kontakt",
+      servicesHeader: "Dienstleistungen",
       reasonTitle: "Gute Gründe 3D Pläne zu bestellen",
       reasons: `<li>Verbessert die Attraktivität des Gebäudes</li>
               <li>Beschleunigt die Entscheidungsfindung von den Investoren</li>
@@ -77,7 +79,7 @@ function Home(props) {
       <main>
         <div className="container">
           <section>
-            <h2>Services</h2>
+            <h2>{content.servicesHeader}</h2>
             <Services language={props.language} />
           </section>
           <section>

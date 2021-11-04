@@ -41,4 +41,11 @@ export const SidebarData = [
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: "nav-text",
   },
+  {
+    GermanTitle: "SartseiteV2",
+    EnglishTitle: "HomeV2",
+    path: "/homev2",
+    icon: <AiIcons.AiFillHome />,
+    cName: "nav-text",
+  },
 ];

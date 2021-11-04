@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import HomeV2 from "./pages/HomeV2";
 import Works from "./pages/Works";
 import About from "./pages/About";
 import Prices from "./pages/Prices";
@@ -46,6 +47,10 @@ export default function App() {
           <Route
             path="/contact"
             component={() => <Contact language={language} />}
+          />
+          <Route
+            path="/homev2"
+            component={() => <HomeV2 language={language} />}
           />
         </Switch>
       </Router>

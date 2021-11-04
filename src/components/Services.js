@@ -88,5 +88,3 @@ function Services(props) {
 }
 
 export default Services;
-
-//HiOutlineLightBulb
