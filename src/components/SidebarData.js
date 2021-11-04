@@ -42,6 +42,13 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
+    GermanTitle: "Workflow",
+    EnglishTitle: "Workflow",
+    path: "/workflow",
+    icon: <AiIcons.AiFillHome />,
+    cName: "nav-text",
+  },
+  {
     GermanTitle: "SartseiteV2",
     EnglishTitle: "HomeV2",
     path: "/homev2",

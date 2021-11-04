@@ -9,6 +9,7 @@ import Works from "./pages/Works";
 import About from "./pages/About";
 import Prices from "./pages/Prices";
 import Contact from "./pages/Contact";
+import Workflow from "./pages/Workflow";
 
 export default function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
@@ -47,6 +48,10 @@ export default function App() {
           <Route
             path="/contact"
             component={() => <Contact language={language} />}
+          />
+          <Route
+            path="/workflow"
+            component={() => <Workflow language={language} />}
           />
           <Route
             path="/homev2"
