@@ -43,16 +43,16 @@ export default function App() {
             component={() => <Works language={language} />}
           />
           <Route
+            path="/workflow"
+            component={() => <Workflow language={language} />}
+          />
+          <Route
             path="/prices"
             component={() => <Prices language={language} />}
           />
           <Route
             path="/contact"
             component={() => <Contact language={language} />}
-          />
-          <Route
-            path="/workflow"
-            component={() => <Workflow language={language} />}
           />
           <Route
             path="/homev2"

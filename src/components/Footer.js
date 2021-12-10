@@ -11,14 +11,11 @@ function Footer() {
       <footer>
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-6">
               <img src={logo} alt={logo}></img>
             </div>
-            <div className="col-4">
-              <p className="mt-4">+49 162 1234 5678</p>
-              <p>juhasz.sandor.1988@gmail.com</p>
-            </div>
-            <div className="col-4 d-flex justify-content-end">
+
+            <div className="col-6 d-flex justify-content-end">
               <a href="tel:004916212345678">
                 <BsIcons.BsTelephone className="icons" />
               </a>

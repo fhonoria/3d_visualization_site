@@ -26,7 +26,13 @@ export const SidebarData = [
     icon: <MdIcons.MdHomeWork />,
     cName: "nav-text",
   },
-
+  {
+    GermanTitle: "Workflow",
+    EnglishTitle: "Workflow",
+    path: "/workflow",
+    icon: <AiIcons.AiFillHome />,
+    cName: "nav-text",
+  },
   {
     GermanTitle: "Preise",
     EnglishTitle: "Prices",
@@ -39,13 +45,6 @@ export const SidebarData = [
     EnglishTitle: "Contact",
     path: "/contact",
     icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
-  },
-  {
-    GermanTitle: "Workflow",
-    EnglishTitle: "Workflow",
-    path: "/workflow",
-    icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
   {
