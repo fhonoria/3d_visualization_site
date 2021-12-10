@@ -5,13 +5,21 @@ import * as IoIcons from "react-icons/io";
 import * as MdIcons from "react-icons/md";
 
 export const SidebarData = [
+  //{
+  //GermanTitle: "StartseiteV1",
+  //EnglishTitle: "HomeV1",
+  //path: "/",
+  //icon: <AiIcons.AiFillHome />,
+  //cName: "nav-text",
+  //}, it is linked to Home.js
   {
-    GermanTitle: "Startseite",
+    GermanTitle: "Sartseite",
     EnglishTitle: "Home",
-    path: "/",
+    path: "/homev2",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
+  // it is linked to HomeV2.js
   {
     GermanTitle: "Über mich",
     EnglishTitle: "About",
@@ -45,13 +53,6 @@ export const SidebarData = [
     EnglishTitle: "Contact",
     path: "/contact",
     icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
-  },
-  {
-    GermanTitle: "SartseiteV2",
-    EnglishTitle: "HomeV2",
-    path: "/homev2",
-    icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
 ];
