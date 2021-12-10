@@ -5,9 +5,11 @@ import "./Prices.css";
 function Prices(props) {
   let content = {
     English: {
+      title: "Prices",
       orderButton: "Order",
     },
     German: {
+      title: "Preise",
       orderButton: "Bestellen",
     },
   };
@@ -19,7 +21,7 @@ function Prices(props) {
   return (
     <div className="prices">
       <section>
-        <h1>Prices</h1>
+        <h1>{content.title}</h1>
       </section>
       <Services language={props.language} />
       <div className="container">

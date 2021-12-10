@@ -7,6 +7,12 @@
   font-family: "Lato", sans-serif;
 }
 
+.App {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 90px;
+}
+
 .btn-branding {
   color: white;
   background: #a88b70;

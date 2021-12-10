@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Prices from "./pages/Prices";
 import Contact from "./pages/Contact";
 import Workflow from "./pages/Workflow";
+import Footer from "./components/Footer";
 
 export default function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
@@ -59,6 +60,7 @@ export default function App() {
           />
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }

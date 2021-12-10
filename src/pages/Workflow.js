@@ -35,9 +35,11 @@ function Workflow(props) {
 
   return (
     <div className="workflow">
-      <div className="container">
+      <div className="container listing">
         <Fragment>
-          <h2>1. {content.firstTitle}</h2>
+          <h2>
+            <strong>1. {content.firstTitle}</strong>
+          </h2>
           {ReactHtmlParser(content.firstDescription)}
           <p>.......</p>
         </Fragment>
