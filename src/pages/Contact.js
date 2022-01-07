@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
 
 function Contact(props) {
   let content = {
@@ -7,11 +8,17 @@ function Contact(props) {
       title: "Contact",
       email: "Email",
       phone: "Phone",
+      message: "Message",
+      alert:
+        "Thank you for your message. We will get in touch with you as soon as possible!",
     },
     German: {
       title: "Kontakt",
       email: "E-Mail",
       phone: "Telefon",
+      message: "Nachricht",
+      alert:
+        "Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen!",
     },
   };
 
@@ -19,31 +26,58 @@ function Contact(props) {
     ? (content = content.German)
     : (content = content.English);
 
+  function sendEmail(event) {
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        "service_escf7mf",
+        "template_lvzhhma",
+        event.target,
+        "user_9W0zDMPkyDJCBEnO65xtf"
+      )
+      .then(alertMessage);
+  }
+
+  function alertMessage() {
+    alert(`${content.alert}`);
+    window.location.reload();
+  }
+
   return (
     <div className="contact">
-      <section>
-        <h1>{content.title}</h1>
-      </section>
-      <section>
-        <h2 className="mb-3">{content.email}</h2>
-        <a href="mailto:juhasz.sandor.1988@gmail.com">
-          juhasz.sandor.1988@gmail.com
-        </a>
-      </section>
-      <section>
-        <h2 className="mb-3">Instagram</h2>
-        <a
-          href="https://www.instagram.com/v_h_i_s_3d"
-          target="_blank"
-          rel="noreferrer"
-        >
-          @v_h_i_s_3d
-        </a>
-      </section>
-      <section>
-        <h2 className="mb-3">{content.phone}</h2>
-        <p>+49 162 1234 5678</p>
-      </section>
+      <div className="container" style={{ marginTop: "50px", width: "60%" }}>
+        <section>
+          <h1>{content.title}</h1>
+        </section>
+        <section>
+          <form
+            className="row"
+            style={{ margin: "25px 85px 75px 100px" }}
+            enctype="multipart/form-data"
+            method="post"
+            onSubmit={sendEmail}
+          >
+            <label>Name</label>
+            <input type="text" name="name" className="form-control" />
+
+            <label>{content.email}</label>
+            <input type="text" name="user_email" className="form-control" />
+
+            <label>{content.message}</label>
+            <textarea name="message" rows="4" className="form-control" />
+
+            <label>Attach file</label>
+            <input type="file" name="user_file" className="form-control" />
+
+            <input
+              type="submit"
+              value="Send"
+              className="form-control btn btn-primary"
+              style={{ marginTop: "30px" }}
+            />
+          </form>
+        </section>
+      </div>
     </div>
   );
 }
