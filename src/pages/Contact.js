@@ -83,3 +83,5 @@ function Contact(props) {
 }
 
 export default Contact;
+
+//subscription is needed for file attachment
