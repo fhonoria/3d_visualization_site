@@ -52,7 +52,6 @@ function Contact(props) {
         <section>
           <form
             className="row"
-            style={{ margin: "25px 85px 75px 100px" }}
             enctype="multipart/form-data"
             method="post"
             onSubmit={sendEmail}

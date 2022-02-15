@@ -23,3 +23,40 @@ li {
 .about .header-text {
   margin: 70px 0 100px 0;
 }
+
+@media (max-width: 992px) {
+  .about h1 {
+    font-size: 35px;
+  }
+
+  .about h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .about h3,
+  li {
+    font-size: 18px;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .about img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .about .listing {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .about .buttons {
+    text-align: center;
+  }
+}

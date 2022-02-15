@@ -44,24 +44,29 @@ function About(props) {
       </section>
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-lg-4">
             <img src={profile} alt="profile_photo" className="img-fluid"></img>
           </div>
-          <div className="col-8 header-text">
+          <div className="col-lg-8 header-text">
             <Fragment>
               <h3>{content.description}</h3>
               <br />
               <h2>
                 <strong>{content.reasonTitle}</strong>
               </h2>
-              <ul>{ReactHtmlParser(content.reasons)}</ul>
+              <div className="listing">
+                <ul>{ReactHtmlParser(content.reasons)}</ul>
+              </div>
             </Fragment>
-            <a href="./Works" className="btn btn-branding">
-              {content.worksButton}
-            </a>
-            <a href="./Contact" className="btn btn-branding">
-              {content.contactButton}
-            </a>
+
+            <div className="buttons">
+              <a href="./Works" className="btn btn-branding">
+                {content.worksButton}
+              </a>
+              <a href="./Contact" className="btn btn-branding">
+                {content.contactButton}
+              </a>
+            </div>
           </div>
         </div>
       </div>

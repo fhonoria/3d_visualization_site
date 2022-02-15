@@ -11,3 +11,12 @@
 .prices .btn-branding {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .prices h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

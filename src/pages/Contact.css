@@ -7,3 +7,16 @@
   font-size: 20px;
   margin: 20px 0 10px 0;
 }
+
+.contact form {
+  margin: 25px 85px 75px 100px;
+}
+
+@media (max-width: 992px) {
+  .contact h1 {
+    font-size: 35px;
+  }
+  .contact form {
+    margin: 0;
+  }
+}

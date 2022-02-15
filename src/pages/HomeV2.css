@@ -62,6 +62,10 @@
 }
 
 @media (max-width: 992px) {
+  .homev2 h1 {
+    font-size: 35px;
+  }
+
   .maintitle {
     margin-top: 10px;
   }

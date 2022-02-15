@@ -39,46 +39,66 @@ function Services(props) {
             <div className="col-3">
               <a href="./Works#exterior" className="work-button">
                 <HiIcons.HiOfficeBuilding className="building-icon" />
-                <h4>
-                  <strong className="text-uppercase">
-                    {content.categoryExterior}
-                  </strong>
-                </h4>
-                <h4>{content.titleExterior}</h4>
               </a>
             </div>
             <div className="col-3">
               <a href="./Works#interior" className="work-button">
                 <FaIcons.FaCouch className="couch-icon" />
-                <h4>
-                  <strong className="text-uppercase">
-                    {content.categoryInterior}
-                  </strong>
-                </h4>
-                <h4>{content.titleInterior}</h4>
               </a>
             </div>
             <div className="col-3">
               <a href="./Works#floor-plans" className="work-button">
                 <FaIcons.FaDraftingCompass className="compass-icon" />
-                <h4>
-                  <strong className="text-uppercase">
-                    {content.category3dFloorplan}
-                  </strong>
-                </h4>
-                <h4>{content.title3dFloorplan}</h4>
               </a>
             </div>
             <div className="col-3">
               <a href="./Works#product-design" className="work-button">
                 <HiIcons.HiLightBulb className="bulb-icon" />
-                <h4>
-                  <strong className="text-uppercase">
-                    {content.categoryProduct}
-                  </strong>
-                </h4>
-                <h4>{content.titleProduct}</h4>
               </a>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <h4>
+                <strong className="text-uppercase">
+                  {content.categoryExterior}
+                </strong>
+              </h4>
+            </div>
+            <div className="col-3">
+              <h4>
+                <strong className="text-uppercase">
+                  {content.categoryInterior}
+                </strong>
+              </h4>
+            </div>
+            <div className="col-3">
+              <h4>
+                <strong className="text-uppercase">
+                  {content.category3dFloorplan}
+                </strong>
+              </h4>
+            </div>
+            <div className="col-3">
+              <h4>
+                <strong className="text-uppercase">
+                  {content.categoryProduct}
+                </strong>
+              </h4>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <h4>{content.titleExterior}</h4>
+            </div>
+            <div className="col-3">
+              <h4>{content.titleInterior}</h4>
+            </div>
+            <div className="col-3">
+              <h4>{content.title3dFloorplan}</h4>
+            </div>
+            <div className="col-3">
+              <h4>{content.titleProduct}</h4>
             </div>
           </div>
         </section>
