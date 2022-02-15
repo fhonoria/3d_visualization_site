@@ -6,12 +6,6 @@
   bottom: 0;
 }
 
-.footer .container {
-  margin: 0 40px;
-  padding-bottom: 10px;
-  width: 100%;
-}
-
 .footer img {
   width: 200px;
   display: flex;
