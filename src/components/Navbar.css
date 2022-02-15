@@ -90,4 +90,8 @@ span {
   .navbar img {
     width: 47%;
   }
+
+  .navbar .menu-bars {
+    margin: 5px;
+  }
 }
