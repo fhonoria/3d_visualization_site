@@ -46,47 +46,47 @@ function HomeV2(props) {
       <div className="container">
         <h1>{content.title}</h1>
         <div className="row">
-          <div className="col-3">
+          <div className="col-lg-3">
             <img src={exterior4} alt="exterior" className="img-fluid"></img>
             <a href="./Works#exterior" className="work-button">
               <HiIcons.HiOfficeBuilding className="building-icon " />
-              <h4>
+              <h4 className="maintitle">
                 <strong className="text-uppercase">
                   {content.categoryExterior}
                 </strong>
               </h4>
-              <h4>{content.titleExterior}</h4>
+              <h4 className="undertitle">{content.titleExterior}</h4>
             </a>
           </div>
-          <div className="col-3">
+          <div className="col-lg-3">
             <img src={interior4} alt="interior" className="img-fluid"></img>
             <a href="./Works#interior" className="work-button">
               <FaIcons.FaCouch className="couch-icon" />
-              <h4>
+              <h4 className="maintitle">
                 <strong className="text-uppercase">
                   {content.categoryInterior}
                 </strong>
               </h4>
-              <h4>{content.titleInterior}</h4>
+              <h4 className="undertitle">{content.titleInterior}</h4>
             </a>
           </div>
-          <div className="col-3">
+          <div className="col-lg-3">
             <img src={floorphoto} alt="3d_floor" className="img-fluid"></img>
             <a href="./Works#floor-plans" className="work-button">
               <FaIcons.FaDraftingCompass className="compass-icon" />
-              <h4>
+              <h4 className="maintitle">
                 <strong className="text-uppercase">
                   {content.category3dFloorplan}
                 </strong>
               </h4>
-              <h4>{content.title3dFloorplan}</h4>
+              <h4 className="undertitle">{content.title3dFloorplan}</h4>
             </a>
           </div>
-          <div className="col-3">
+          <div className="col-lg-3">
             <img src={object2} alt="product_design" className="img-fluid"></img>
             <a href="./Works#product-design" className="work-button">
               <HiIcons.HiLightBulb className="bulb-icon" />
-              <h4>
+              <h4 className="maintitle">
                 <strong className="text-uppercase">
                   {content.categoryProduct}
                 </strong>

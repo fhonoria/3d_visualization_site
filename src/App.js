@@ -3,7 +3,7 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
+//import Home from "./pages/Home";
 import HomeV2 from "./pages/HomeV2";
 import Works from "./pages/Works";
 import About from "./pages/About";
@@ -32,7 +32,7 @@ export default function App() {
           <Route
             path="/"
             exact
-            component={() => <Home language={language} />}
+            component={() => <HomeV2 language={language} />}
           />
           <Route
             path="/about"

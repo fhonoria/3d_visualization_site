@@ -104,3 +104,5 @@ function Home(props) {
 }
 
 export default Home;
+
+//client has chosen HomeV2
