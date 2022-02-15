@@ -3,8 +3,8 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import Home from "./pages/Home";
-import HomeV2 from "./pages/HomeV2";
+//import Homev1 from "./pages/Homev1";
+import Home from "./pages/Home";
 import Works from "./pages/Works";
 import About from "./pages/About";
 import Prices from "./pages/Prices";
@@ -32,7 +32,7 @@ export default function App() {
           <Route
             path="/"
             exact
-            component={() => <HomeV2 language={language} />}
+            component={() => <Home language={language} />}
           />
           <Route
             path="/about"
@@ -54,10 +54,7 @@ export default function App() {
             path="/contact"
             component={() => <Contact language={language} />}
           />
-          <Route
-            path="/homev2"
-            component={() => <HomeV2 language={language} />}
-          />
+          <Route path="/home" component={() => <Home language={language} />} />
         </Switch>
       </Router>
       <Footer />

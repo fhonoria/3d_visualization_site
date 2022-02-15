@@ -7,19 +7,19 @@ import * as MdIcons from "react-icons/md";
 export const SidebarData = [
   //{
   //GermanTitle: "StartseiteV1",
-  //EnglishTitle: "HomeV1",
+  //EnglishTitle: "Homev1",
   //path: "/",
   //icon: <AiIcons.AiFillHome />,
   //cName: "nav-text",
-  //}, it is linked to Home.js
+  //}, it is linked to Homev1.js
   {
     GermanTitle: "Sartseite",
     EnglishTitle: "Home",
-    path: "/homev2",
+    path: "/home",
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
-  // it is linked to HomeV2.js
+  // it is linked to Home.js
   {
     GermanTitle: "Über mich",
     EnglishTitle: "About",

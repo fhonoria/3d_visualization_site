@@ -1,53 +1,39 @@
-import React, { Fragment } from "react";
-import Services from "../components/Services";
-import photo from "../photos/homepic.JPG";
+import React from "react";
 import "./Home.css";
-import ReactHtmlParser from "react-html-parser";
+import * as FaIcons from "react-icons/fa";
+import * as HiIcons from "react-icons/hi";
+import exterior4 from "../photos/final_day_2_ps.jpg";
+import interior4 from "../photos/Daylight_final_ps.jpg";
+import object2 from "../photos/Closeup_final_ps_cropped.jpg";
+import floorphoto from "../photos/floorplans.jpeg";
 
 function Home(props) {
   let content = {
     English: {
       title: "3D visualisation",
-      description:
-        "I am Sandor Juhasz. Architect and 3D visualiser. Welcome to my site!",
       worksButton: "Works",
       contactButton: "Contact",
-      servicesHeader: "Services",
-      reasonTitle: "Reasons to order 3D visualisation",
-      reasons: `<li>Improves attractivity of the building</li>
-              <li>Expedites investor´s decision-making</li>
-              <li>Increases sales</li>
-              <li>Helps you to stay ahead of competition</li>
-              <li>Contributes to a modern company image</li>`,
-      startTitle: "To start with...",
-      startDescription: `<p>
-              All I need is some architectural sketches, blueprints or drawings
-              in any format and all the details you have regarding the project.
-              <br />
-              The more information, the better results.
-            </p>`,
-      requestButton: "Send your request",
+      categoryExterior: "Architecture",
+      categoryInterior: "Interior Design",
+      category3dFloorplan: "Real estate",
+      categoryProduct: "Product Design",
+      titleExterior: "3D exterior visualisation",
+      titleInterior: "3D interior visualisation",
+      title3dFloorplan: "3D floor plans",
+      titleProduct: "3D product visualisation",
     },
     German: {
       title: "3D Visualisierung",
-      description:
-        "Ich bin Sandor Juhasz. Architekt und 3D Visualisierer. Wilkommen auf meiner Webseite!",
       worksButton: "Portfolio",
       contactButton: "Kontakt",
-      servicesHeader: "Dienstleistungen",
-      reasonTitle: "Gute Gründe 3D Pläne zu bestellen",
-      reasons: `<li>Verbessert die Attraktivität des Gebäudes</li>
-              <li>Beschleunigt die Entscheidungsfindung von den Investoren</li>
-              <li>Steigert den Verkauf</li>
-              <li>Hilft vor der Konkurrenz in Führung zu bleiben</li>
-              <li>Trägt zu einem modernen Unternehmensimage bei</li>`,
-      startTitle: "zum Start der Zusammenarbeit...",
-      startDescription: `<p>
-              Alles, was ich brauche, sind Ihre architektonische Skizzen,  I need is some architectural Zeichnungen, Entwürfe und Pläne und alle Details, die Sie mir zur Verfügung stellen können.
-              <br />
-              Je mehr Informationen, desto besser das Ergebnis.
-            </p>`,
-      requestButton: "Anfrage senden",
+      categoryExterior: "Architektur",
+      categoryInterior: "Innenarchitektur",
+      category3dFloorplan: "Immobilien",
+      categoryProduct: "Produktdesign",
+      titleExterior: "3D Architektur Visualisierung",
+      titleInterior: "3D Innenraum Visualisierung",
+      title3dFloorplan: "3D Grundrisse",
+      titleProduct: "3D Produktvisualisierung",
     },
   };
 
@@ -57,52 +43,69 @@ function Home(props) {
 
   return (
     <div className="home">
-      <header>
-        <div className="container">
-          <div className="row">
-            <div className="col-8">
-              <img src={photo} alt="3d_main_photo" className="img-fluid"></img>
-            </div>
-            <div className="col-4 header-text">
-              <h1>{content.title}</h1>
-              <h3>{content.description}</h3>
-              <a href="./Works" className="btn btn-branding">
-                {content.worksButton}
-              </a>
-              <a href="./Contact" className="btn btn-branding">
-                {content.contactButton}
-              </a>
-            </div>
+      <div className="container">
+        <h1>{content.title}</h1>
+        <div className="row">
+          <div className="col-lg-3">
+            <img src={exterior4} alt="exterior" className="img-fluid"></img>
+            <a href="./Works#exterior" className="work-button">
+              <HiIcons.HiOfficeBuilding className="building-icon " />
+              <h4 className="maintitle">
+                <strong className="text-uppercase">
+                  {content.categoryExterior}
+                </strong>
+              </h4>
+              <h4 className="undertitle">{content.titleExterior}</h4>
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <img src={interior4} alt="interior" className="img-fluid"></img>
+            <a href="./Works#interior" className="work-button">
+              <FaIcons.FaCouch className="couch-icon" />
+              <h4 className="maintitle">
+                <strong className="text-uppercase">
+                  {content.categoryInterior}
+                </strong>
+              </h4>
+              <h4 className="undertitle">{content.titleInterior}</h4>
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <img src={floorphoto} alt="3d_floor" className="img-fluid"></img>
+            <a href="./Works#floor-plans" className="work-button">
+              <FaIcons.FaDraftingCompass className="compass-icon" />
+              <h4 className="maintitle">
+                <strong className="text-uppercase">
+                  {content.category3dFloorplan}
+                </strong>
+              </h4>
+              <h4 className="undertitle">{content.title3dFloorplan}</h4>
+            </a>
+          </div>
+          <div className="col-lg-3">
+            <img src={object2} alt="product_design" className="img-fluid"></img>
+            <a href="./Works#product-design" className="work-button">
+              <HiIcons.HiLightBulb className="bulb-icon" />
+              <h4 className="maintitle">
+                <strong className="text-uppercase">
+                  {content.categoryProduct}
+                </strong>
+              </h4>
+              <h4>{content.titleProduct}</h4>
+            </a>
           </div>
         </div>
-      </header>
-      <main>
-        <div className="container">
-          <section>
-            <h2>{content.servicesHeader}</h2>
-            <Services language={props.language} />
-          </section>
-          <section>
-            <Fragment>
-              <h2>{content.reasonTitle}</h2>
-              <ul>{ReactHtmlParser(content.reasons)}</ul>
-            </Fragment>
-          </section>
-          <section>
-            <Fragment>
-              <h2>{content.startTitle}</h2>
-              {ReactHtmlParser(content.startDescription)}
-              <a href="./Contact" className="btn btn-branding request-button">
-                {content.requestButton}
-              </a>
-            </Fragment>
-          </section>
-        </div>
-      </main>
+        <section className="redirecting-buttons">
+          <a href="./Works" className="btn btn-branding">
+            {content.worksButton}
+          </a>
+          <a href="./Contact" className="btn btn-branding">
+            {content.contactButton}
+          </a>
+        </section>
+      </div>
     </div>
   );
 }
 
 export default Home;
-
-//client has chosen HomeV2

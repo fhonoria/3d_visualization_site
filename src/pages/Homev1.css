@@ -1,0 +1,66 @@
+.homev1 {
+  height: 100%;
+}
+
+.homev1 section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.homev1 img {
+  margin: 40px 0;
+  max-width: 80%;
+}
+
+.homev1 h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.homev1 h2 {
+  margin-bottom: 30px;
+}
+
+.homev1 h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.homev1 h4 {
+  font-size: 20px;
+}
+
+.homev1 i {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.homev1 li {
+  margin: 20px 0 0 415px;
+  text-align: left;
+}
+
+.homev1 p {
+  text-align: center;
+}
+
+.homev1 .header-text {
+  margin: 150px 0;
+}
+
+.homev1 .container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.homev1 .work-button {
+  color: #060b26;
+  text-decoration: none;
+}
+
+.homev1 i:hover {
+  opacity: 0.7;
+}
