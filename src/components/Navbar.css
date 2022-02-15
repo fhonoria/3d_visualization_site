@@ -89,6 +89,7 @@ span {
 @media (max-width: 400px) {
   .navbar img {
     width: 47%;
+    margin-bottom: 3px;
   }
 
   .navbar .menu-bars {
