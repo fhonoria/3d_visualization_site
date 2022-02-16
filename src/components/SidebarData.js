@@ -13,7 +13,7 @@ export const SidebarData = [
   //cName: "nav-text",
   //}, it is linked to Homev1.js
   {
-    GermanTitle: "Sartseite",
+    GermanTitle: "Startseite",
     EnglishTitle: "Home",
     path: "/home",
     icon: <AiIcons.AiFillHome />,
