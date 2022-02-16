@@ -38,8 +38,16 @@
   margin-bottom: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .services h4 {
     font-size: 12px;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 576px) {
+  .services h4 {
+    font-size: 10px;
+    word-break: break-word;
   }
 }

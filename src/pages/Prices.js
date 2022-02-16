@@ -34,7 +34,7 @@ function Prices(props) {
             <p>Details</p>
             <p>Details</p>
             <br />
-            <a href="./Contact" className="btn btn-branding">
+            <a href="./Contact" className="btn btn-branding orderbutton">
               {content.orderButton}
             </a>
           </div>
@@ -46,7 +46,7 @@ function Prices(props) {
             <p>Details</p>
             <p>Details</p>
             <br />
-            <a href="./Contact" className="btn btn-branding">
+            <a href="./Contact" className="btn btn-branding orderbutton">
               {content.orderButton}
             </a>
           </div>
@@ -58,7 +58,7 @@ function Prices(props) {
             <p>Details</p>
             <p>Details</p>
             <br />
-            <a href="./Contact" className="btn btn-branding">
+            <a href="./Contact" className="btn btn-branding orderbutton">
               {content.orderButton}
             </a>
           </div>
@@ -70,7 +70,7 @@ function Prices(props) {
             <p>Details</p>
             <p>Details</p>
             <br />
-            <a href="./Contact" className="btn btn-branding">
+            <a href="./Contact" className="btn btn-branding orderbutton">
               {content.orderButton}
             </a>
           </div>
