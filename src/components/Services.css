@@ -40,6 +40,12 @@
 
 @media (max-width: 992px) {
   .services h4 {
+    font-size: 15px;
+    word-break: break-word;
+  }
+}
+@media (max-width: 768px) {
+  .services h4 {
     font-size: 12px;
     word-break: break-word;
   }
