@@ -25,11 +25,11 @@ function About(props) {
       worksButton: "Portfolio",
       contactButton: "Kontakt",
       reasonTitle: "Warum 3D?",
-      reasons: `<li>Verbessert die Attraktivität des Gebäudes</li>
-              <li>Beschleunigt die Entscheidungsfindung von den Investoren</li>
-              <li>Steigert den Verkauf</li>
-              <li>Hilft vor der Konkurrenz in Führung zu bleiben</li>
-              <li>Trägt zu einem modernen Unternehmensimage bei</li>`,
+      reasons: `<li>verbessert die Attraktivität des Gebäudes</li>
+              <li>beschleunigt die Entscheidungsfindung von Investoren</li>
+              <li>steigert den Verkauf</li>
+              <li>generiert einen konkurreznfähigen Vorteil</li>
+              <li>modernes Unternehmensdesign</li>`,
     },
   };
 
